@@ -100,3 +100,4 @@ deploy:
   type: git
   repo: https://github.com/vecoding/vecoding.github.io.git
   branch: master
+  mathjax: true
