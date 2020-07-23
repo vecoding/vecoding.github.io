@@ -2,20 +2,20 @@
 
 menu:
   主页: /
-  随笔: /tags/随笔/
+  缘.: /
 
 # SubNav
 subnav:
-  github: "#"
-  weibo: "#"
-  rss: "#"
-  zhihu: "#"
+  github: "https://github.com/vecoding"
+  #weibo: "#"
+  #rss: "#"
+  #zhihu: "#"
   #qq: "#"
   #weixin: "#"
   #jianshu: "#"
   #douban: "#"
   #segmentfault: "#"
-  #bilibili: "#"
+  bilibili: "https://space.bilibili.com/515033105"
   #acfun: "#"
   #mail: "mailto:litten225@qq.com"
   #facebook: "#"
@@ -33,7 +33,7 @@ root: /
 # Content
 
 # 文章太长，截断按钮文字
-excerpt_link: more
+#excerpt_link: more
 # 文章卡片右下角常驻链接，不需要请设置为false
 show_all_link: '展开全文'
 # 数学公式
@@ -65,10 +65,10 @@ top: true
 # Miscellaneous
 baidu_analytics: ''
 google_analytics: ''
-favicon: /assets/head.jpg
+favicon: /assest/head.jpg
 
 #你的头像url
-avatar: /assets/head.jpg
+avatar: /assest/head.jpg
 
 #是否开启分享
 share_jia: true
@@ -120,11 +120,11 @@ smart_menu:
   aboutme: '关于我'
 
 friends:
-  友情链接1: http://localhost:4000/
-  友情链接2: http://localhost:4000/
-  友情链接3: http://localhost:4000/
-  友情链接4: http://localhost:4000/
-  友情链接5: http://localhost:4000/
-  友情链接6: http://localhost:4000/
+#  友情链接1: http://localhost:4000/
+#  友情链接2: http://localhost:4000/
+#  友情链接3: http://localhost:4000/
+#  友情链接4: http://localhost:4000/
+#  友情链接5: http://localhost:4000/
+#  友情链接6: http://localhost:4000/
 
 aboutme: 很惭愧<br><br>只做了一点微小的工作<br>谢谢大家
