@@ -34,11 +34,13 @@ tag: 实用
 
 first，进入Git的安装位置，找到git-bash.exe并打开
 
-<img src="C:\Users\lenovo\Desktop\3.png" alt="3" style="zoom: 67%;" />
+![](https://s1.ax1x.com/2020/07/24/UvAqWn.png)
 
 忘记了Git安装位置的小伙伴们可以从开始菜单栏找
 
-<img src="C:\Users\lenovo\Desktop\1.png" alt="1" style="zoom:;" />![2](C:\Users\lenovo\Desktop\2.png)
+![](https://s1.ax1x.com/2020/07/24/UvANGR.png)
+
+![](https://s1.ax1x.com/2020/07/24/UvAti9.png)
 
 ~~其实在菜单栏找到Git Bush后，直接双击就可以打开git-bash.exe了~~
 
@@ -50,21 +52,21 @@ ssh-keygen -t rsa -C "这里填GitHub网站注册的邮箱"
 
 然后4下回车，就会出现以下图片,可能有会和这个有点不一样（差不多就行了）
 
-![4](C:\Users\lenovo\Desktop\4.png)
+![4](https://s1.ax1x.com/2020/07/24/UvA8ZF.png)
 
 之后，就打开GitHub官网，登录账号，然后点击头像再点击setting
 
-![5](C:\Users\lenovo\Desktop\5.png)
+![5](https://s1.ax1x.com/2020/07/24/UvAJIJ.png)
 
 你会在这个页面的左边发现这个，点击它
 
-![6](C:\Users\lenovo\Desktop\6.png)
+![6](https://s1.ax1x.com/2020/07/24/UvAGa4.png)
 
 进入页面后点击右上角的绿色按钮  *New SHH key*
 
-![7](C:\Users\lenovo\Desktop\7.png)
+![7](https://s1.ax1x.com/2020/07/24/UvArZD.png)
 
-这时会让你填Title和Key，Title乱填什么都可以，Key要打入我们刚刚生成的钥匙，钥匙的位置在 `C:\Users\你的用户名\.ssh`，打开文件夹后，你会发现一个叫`id_rsa.pub`的文件，右键记事本打开，把里面的东西都复制到GitHub的Key框那里![8](C:\Users\lenovo\Desktop\8.png)
+这时会让你填Title和Key，Title乱填什么都可以，Key要打入我们刚刚生成的钥匙，钥匙的位置在 `C:\Users\你的用户名\.ssh`，打开文件夹后，你会发现一个叫`id_rsa.pub`的文件，右键记事本打开，把里面的东西都复制到GitHub的Key框那里![8](https://s1.ax1x.com/2020/07/24/UvAaxx.png)
 
 ### 2、初步部署博客
 
@@ -82,17 +84,19 @@ ssh-keygen -t rsa -C "这里填GitHub网站注册的邮箱"
 
 ##### （1）输入盘，例如：`F:`（因为我的文件夹设置在F盘，固这里打F:，**请不要直抄，按实际情况填写**）
 
-![9](C:\Users\lenovo\Desktop\9.png)
+![9](https://s1.ax1x.com/2020/07/24/UvABqO.png)
 
 ##### （2）运用cmd的cd命令调位置 ，例如：`cd blog`因为我的文件夹在F盘的根目录，固只用cd一次即可
 
-![10](C:\Users\lenovo\Desktop\10.png)
+![10](https://s1.ax1x.com/2020/07/24/UvAwM6.png)
 
 **如果各位的位置不是在根目录，cd多几次即可，如下图**
 
-![11](C:\Users\lenovo\Desktop\11.png)
+![11](https://s1.ax1x.com/2020/07/24/UvA0sK.png)
 
 ##### （3）用`npm config set registry https://registry.npm.taobao.org`**切换npm的下载源**，然后再打入给出的那行命令：`npm install hexo-cli -g`，等待安装即可
+
+![](https://s1.ax1x.com/2020/07/24/UvAsde.png)
 
 之前我就被这里坑到。原本是可以不切换下载源的，但是npm下载源在国外，那速度简直了，不切换国内下载源很可能中途来个安装失败。**如何看是否是安装失败：你看看安装完后前面的一串英文是否有error的字眼（无需区分大小写）或者ERR**
 
@@ -108,7 +112,7 @@ ssh-keygen -t rsa -C "这里填GitHub网站注册的邮箱"
 
 这时，需要时间。安装时，可能会有一些写着`WARN`的黄色的东东，这是正常现象。安装完后，你之前建的文件夹内就出现了名字为刚刚你打的博客名的文件夹，**这是正常现象**
 
-
+![](https://s1.ax1x.com/2020/07/24/UvARzt.png)
 
 重点又来了
 
@@ -116,9 +120,13 @@ ssh-keygen -t rsa -C "这里填GitHub网站注册的邮箱"
 
 **再次提醒，记得切换下载源！！不切换国内下载源很可能中途来个安装失败。**
 
+![](https://s1.ax1x.com/2020/07/24/UvAcid.png)
+
 这时，我们基本已经创好博客了，你可以在cmd输入`hexo s -p 端口 `，然后它会给出一个网址供查看自己的博客。如果你在cmd输入Ctrl+C即可停止这个端口
 
+![](https://s1.ax1x.com/2020/07/24/UvAgJA.png)
 
+![](https://s1.ax1x.com/2020/07/24/UvAbJs.png)
 
 **cmd别关！**
 
@@ -126,21 +134,35 @@ ssh-keygen -t rsa -C "这里填GitHub网站注册的邮箱"
 
 # 将博客上传到GitHub供大家浏览
 
-进入GitHub，点击右上角的+号，点击`New repository` 新建一个仓库，Repository name处**必须**填`你的的Github用户名.github.io`，**如果`.github.io`前不是填你的GitHub用户名，查看博客时只会显示`undefined`**。还有一些细节需要注意的是，**要保证下面的选项选的是`Public`，并且`Initialize this repository with a README`处要打上钩**
+进入GitHub，点击右上角的+号，点击`New repository` 新建一个仓库。
+
+![](https://s1.ax1x.com/2020/07/24/UvA2RI.png)
+
+Repository name处**必须**填`你的的Github用户名.github.io`，**如果`.github.io`前不是填你的GitHub用户名，查看博客时只会显示`undefined`**。还有一些细节需要注意的是，**要保证下面的选项选的是`Public`，并且`Initialize this repository with a README`处要打上钩**
 
 然后点击`Create repository`创建仓库
 
+![](https://s1.ax1x.com/2020/07/24/UvAhsf.png)
+
 我们现在就到了仓库的页面，点击右侧的`Code`并把那个链接复制下载
 
+![](https://s1.ax1x.com/2020/07/24/UvAfQP.png)
+
 然后我们用Sublime打开我们刚刚自动创建的以你打的博客名为名字的文件夹，打开`_config.yml`，拉到最下面，在`type:`处输入git
+
+![](https://s1.ax1x.com/2020/07/24/UvAIeS.png)
 
 然后我们在`type:`下一行输入`repo:`，然后粘贴刚刚复制的地址
 
 之后我们就在`repo:`后加上一行，输入`branch: master`
 
+![](https://s1.ax1x.com/2020/07/24/UvAToQ.png)
+
 接着我们往上拉，找到`url:`后面输入：`http://你的Github用户名.github.io`
 
 上方还有一个author，改成你想要的名字，表示这个博客是谁的
+
+![](https://s1.ax1x.com/2020/07/24/UvAodg.png)
 
 **冒号后记得留一个空格，如果前面的type没有变红就表示没留空格**
 
@@ -148,7 +170,11 @@ ssh-keygen -t rsa -C "这里填GitHub网站注册的邮箱"
 
 最后点击Sublime内的关闭（注意不是整个程序的叉）
 
+![](https://s1.ax1x.com/2020/07/24/UvA4L8.th.png)
+
 之后，我们回到cmd（记得退本地端口），输入 `npm install hexo-deployer-git --save`，安装Git插件。
+
+![](https://s1.ax1x.com/2020/07/24/UvAHij.png)
 
 安装完后我们在 `cmd` 中输入`hexo g`，代表本地文件生成，回车后输入 `hexo d`，代表上传。
 
