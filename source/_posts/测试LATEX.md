@@ -7,6 +7,13 @@ tag: 水
 测试
 
 
+<<<<<<< HEAD
+=======
+
+
+
+
+>>>>>>> 0e98d50681d9609e2518f77ec6d1897081b46fcf
 $$
 xxxxxxxxxx X=\left|    \begin{matrix}        x_{11} & x_{12} & \cdots & x_{1d}\\        x_{21} & x_{22} & \cdots & x_{2d}\\        \vdots & \vdots & \ddots & \vdots \\        x_{11} & x_{12} & \cdots & x_{1d}\\    \end{matrix}\right|
 $$
